@@ -1,4 +1,4 @@
-import pool from "../../db/conectionDb.js";
+import pool from "../../db/connectionDb.js";
 
 const getLikes = async () => {
     const SQLquery = { text: "SELECT * FROM posts" };
@@ -11,7 +11,7 @@ const getLikes = async () => {
     }
 };
 
-const createLikes = async ({ titulo, img, descripcion, likes }) => {
+const createLike = async ({ id, titulo, img, descripcion, likes }) => {
     const SQLquery = {
         text: "INSERT INTO posts (id, titulo, img, descripcion, likes) VALUES ($1, $2, $3, $4, $5) RETURNING *",
         values: [id, titulo, img, descripcion, likes],
@@ -25,4 +25,4 @@ const createLikes = async ({ titulo, img, descripcion, likes }) => {
     }
 };
 
-export { getLikes, createLikes };
+export { getLikes, createLike };
