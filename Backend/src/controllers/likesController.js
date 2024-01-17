@@ -1,4 +1,4 @@
-import {getLikes, createLike} from '../../models/likeModel.js'
+import {getLikes, createLikes} from '../../models/likeModel.js'
 
 const getAllLikes = async(req, res) => {
     try {
@@ -14,7 +14,7 @@ const getAllLikes = async(req, res) => {
 const createLikes = async(req, res) => {
     try {
         const {like} = req.body;
-        const newPost = await createLike(like);
+        const newPost = await createLikes(like);
         res.status(201).json({ like: newPost });
     }
     catch (error) {

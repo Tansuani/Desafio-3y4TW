@@ -11,7 +11,7 @@ const getLikes = async () => {
     }
 };
 
-const createLike = async ({ titulo, img, descripcion, likes }) => {
+const createLikes = async ({ titulo, img, descripcion, likes }) => {
     const SQLquery = {
         text: "INSERT INTO posts (titulo, img, descripcion, likes) VALUES ($1, $2, $3, $4) RETURNING *",
         values: [titulo, img, descripcion, likes],
@@ -25,4 +25,4 @@ const createLike = async ({ titulo, img, descripcion, likes }) => {
     }
 };
 
-export { getLikes, createLike };
+export { getLikes, createLikes };
