@@ -1,63 +1,68 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
-import TodoForm from "./components/TodoForm";
-import { Todos } from "./components/Todos";
+import Form from "./components/Form";
+import Post from "./components/Post";
 
-const App = () => {
-  const [todos, setTodos] = useState([]);
+const urlBaseServer = "http://localhost:3000";
 
-  const getTodos = async () => {
-    const response = await fetch("http://localhost:5000/todos");
-    const todos = await response.json();
-    setTodos(todos);
+function App() {
+  const [titulo, setTitulo] = useState("");
+  const [imgSrc, setImgSRC] = useState("");
+  const [descripcion, setDescripcion] = useState("");
+  const [posts, setPosts] = useState([]);
+
+  const getPosts = async () => {
+    const { data: posts } = await axios.get(urlBaseServer + "/posts");
+    setPosts([...posts]);
+  };
+
+  const agregarPost = async () => {
+    const post = { titulo, url: imgSrc, descripcion };
+    await axios.post(urlBaseServer + "/posts", post);
+    getPosts();
+  };
+
+  // este método se utilizará en el siguiente desafío
+  const like = async (id) => {
+    await axios.put(urlBaseServer + `/posts/like/${id}`);
+    getPosts();
+  };
+
+  // este método se utilizará en el siguiente desafío
+  const eliminarPost = async (id) => {
+    await axios.delete(urlBaseServer + `/posts/${id}`);
+    getPosts();
   };
 
   useEffect(() => {
-    getTodos();
+    getPosts();
   }, []);
 
-  const addTodo = async (title) => {
-    const response = await fetch("http://localhost:5000/todos", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ title }),
-    });
-    const todo = await response.json();
-    setTodos([...todos, todo]);
-  };
-
-  const removeTodo = async (id) => {
-    const response = await fetch(`http://localhost:5000/todos/${id}`, {
-      method: "DELETE",
-    });
-    if (response.status !== 200) {
-      return alert("Something went wrong");
-    }
-    setTodos(todos.filter((todo) => todo.id !== id));
-  };
-
-  const updateTodo = async (id) => {
-    const response = await fetch(`http://localhost:5000/todos/${id}`, {
-      method: "PUT",
-    });
-    if (response.status !== 200) {
-      return alert("Something went wrong");
-    }
-    setTodos(
-      todos.map((todo) => {
-        if (todo.id === id) {
-          todo.done = !todo.done;
-        }
-        return todo;
-      })
-    );
-  };
-
   return (
-    <div className="container">
-      <h1 className="">Todos APP</h1>
-      <TodoForm addTodo={addTodo} />
-      <Todos todos={todos} removeTodo={removeTodo} updateTodo={updateTodo} />
+    <div className="App">
+      <h2 className="py-5 text-center">&#128248; Like Me &#128248;</h2>
+      <div className="row m-auto px-5">
+        <div className="col-12 col-sm-4">
+          <Form
+            setTitulo={setTitulo}
+            setImgSRC={setImgSRC}
+            setDescripcion={setDescripcion}
+            agregarPost={agregarPost}
+          />
+        </div>
+        <div className="col-12 col-sm-8 px-5 row posts align-items-start">
+          {posts.map((post, i) => (
+            <Post
+              key={i}
+              post={post}
+              like={like}
+              eliminarPost={eliminarPost}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
-};
+}
+
 export default App;

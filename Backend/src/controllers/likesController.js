@@ -3,7 +3,7 @@ import {getLikes, createLikes} from '../../models/likeModel.js'
 const getAllLikes = async(req, res) => {
     try {
         const likes = await getLikes();
-        res.status(200).json({ likes: likes });
+        res.status(200).json({ like: likes });
     }
     catch (error) {
         res.status(500).json({ error: "Error al procesar la solicitud" });
