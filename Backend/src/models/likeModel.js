@@ -3,22 +3,22 @@ import pool from "../../db/connectionDb.js";
 const getLikes = async () => {
     const SQLquery = { text: "SELECT * FROM posts" };
     try {
-        const response = await pool.query(SQLquery);
-        return response.rows;
+        const {rows} = await pool.query(SQLquery);
+        return rows;
     }
     catch (error) {
         console.log(error);
     }
 };
 
-const createLike = async ({ id, titulo, img, descripcion, likes }) => {
+const createLike = async ({ titulo, url: imgSrc, descripcion }) => {
     const SQLquery = {
-        text: "INSERT INTO posts (id, titulo, img, descripcion, likes) VALUES ($1, $2, $3, $4, $5) RETURNING *",
-        values: [id, titulo, img, descripcion, likes],
+        text: "INSERT INTO posts (titulo, url: imgSrc, descripcion) VALUES ($1, $2, $3) RETURNING *",
+        values: [titulo, imgSrc, descripcion],
     };
     try {
-        const response = await pool.query(SQLquery);
-        return response.rows;
+        const {rows} = await pool.query(SQLquery);
+        return rows;
     }
     catch (error) {
         console.log(error);

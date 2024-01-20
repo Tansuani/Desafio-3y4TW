@@ -1,9 +1,10 @@
-import {getLikes, createLike, updateLike, deleteLike} from '../../models/likeModel.js'
+import {getLikes, createLike, updateLike, deleteLike} from '../models/likeModel.js'
 
 const getAllLikes = async(req, res) => {
     try {
         const posts = await getLikes();
-        res.status(200).json({ posts: posts });
+        console.log(posts)
+        res.status(200).json(posts);
     }
     catch (error) {
         res.status(500).json({ error: "Error al procesar la solicitud" });
@@ -13,6 +14,7 @@ const getAllLikes = async(req, res) => {
 
 const createLikes = async(req, res) => {
     try {
+        console.log(req.body)
         const {post} = req.body;
         const newLike = await createLike(post);
         res.status(201).json({ post: newLike });
