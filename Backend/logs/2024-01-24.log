@@ -1,0 +1,160 @@
+
+Started GET /posts for :: ::1 at Tue Jan 23 2024 21:40:47 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Started GET /posts for :: ::1 at Tue Jan 23 2024 21:40:47 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 157 ms Request ID: [02af0a44-cb62-45e7-961d-16ba19115b18]
+
+Completed: 304 message:  Time response: 10 ms Request ID: [36fd783d-40ca-4a48-9189-5fc516282a68]
+
+Started PUT /posts/like/2 for :: ::1 at Tue Jan 23 2024 21:40:50 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [7e2d867c-3627-4f7c-b91e-b2129bd31d3e]
+
+Started DELETE /posts/2 for :: ::1 at Tue Jan 23 2024 21:40:53 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [8641b5e7-0237-4fa3-9d86-7cc1cbc1ce34]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:41:17 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"dfdf","url":"jkjk","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 8 ms Request ID: [231d6b5a-a192-46d1-9e2b-ed782d18195b]
+
+Started GET /posts for :: ::1 at Tue Jan 23 2024 21:41:57 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Started GET /posts for :: ::1 at Tue Jan 23 2024 21:41:57 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 242 ms Request ID: [8d11e401-4930-45ea-8393-d0ef482ba251]
+
+Completed: 304 message:  Time response: 31 ms Request ID: [a673e0e3-bb0c-43d5-b892-1a35674d1572]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:42:17 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"","url":"","descripcion":""}
+Completed: 500 message:  Time response: 6 ms Request ID: [2b6fbc8d-2db8-4e65-9790-d17600a69880]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:46:53 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"","url":"","descripcion":""}
+Completed: 500 message:  Time response: 16 ms Request ID: [f8c755c9-9055-45dd-84e6-704993340805]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:47:22 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"erer","url":"fgfg","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 7 ms Request ID: [729e4a11-5ae3-40e0-8448-572484892bc8]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:47:55 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"erer","url":"fgfg","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 22 ms Request ID: [0d9a667c-ff1d-4831-a12c-b78d0499960c]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:48:22 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"erer","url":"fgfg","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 21 ms Request ID: [c8b40a56-2f3d-4413-a9e8-a32ae08ef1fc]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:49:44 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"erer","url":"fgfg","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 18 ms Request ID: [73cbc462-5bbb-457e-9f81-e58dc8772772]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:50:08 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"erer","url":"fgfg","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 32 ms Request ID: [ac6643f2-67b5-4a55-9ead-a7798eba6c43]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:55:34 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"erer","url":"fgfg","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 15 ms Request ID: [80e2729a-0d2a-46db-aa2f-57264c2567e3]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:59:19 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"erer","url":"fgfg","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 21 ms Request ID: [3757b00f-9e67-486b-be06-5132ac0050ba]
+
+Started PUT /posts/like/2 for :: ::1 at Tue Jan 23 2024 21:59:31 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 7 ms Request ID: [4bd6eed6-fa2b-4d49-b457-e75367a84c47]
+
+Started PUT /posts/like/1 for :: ::1 at Tue Jan 23 2024 21:59:34 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [17182e62-1624-4449-8a3a-305cbcdecf57]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 21:59:55 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"erer","url":"fgfg","descripcion":"zxzx"}
+Completed: 500 message:  Time response: 8 ms Request ID: [91451f09-1da1-4bff-9b51-04c76eeef9c5]
+
+Started GET /posts for :: ::1 at Tue Jan 23 2024 22:00:29 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 298 ms Request ID: [d19a35b7-c3b3-4983-9756-da349890fc97]
+
+Started GET /posts for :: ::1 at Tue Jan 23 2024 22:00:29 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 26 ms Request ID: [69f65417-09f1-4695-8376-2086926b0662]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 22:00:45 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastic"}
+Completed: 500 message:  Time response: 7 ms Request ID: [6a081ce5-2216-4bbe-b539-f81a3daa7f13]
+
+Started GET /posts for :: ::1 at Tue Jan 23 2024 22:01:48 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 81 ms Request ID: [25af7ed2-1af3-40e2-83f1-3a6d52e01a53]
+
+Started GET /posts for :: ::1 at Tue Jan 23 2024 22:01:48 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 11 ms Request ID: [e833d2e6-f39e-430c-8382-564fe923bb94]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 22:02:08 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastic"}
+Completed: 500 message:  Time response: 8 ms Request ID: [379c5a9f-cd10-41b3-9a9d-8baa77918773]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 22:08:34 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastic"}
+Completed: 500 message:  Time response: 22 ms Request ID: [d4707cf6-2895-44c5-8250-71a361b4adc6]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 22:11:51 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastic"}
+Completed: 500 message:  Time response: 20 ms Request ID: [68cff354-14a5-4f59-888a-4aa7a0d7a9d8]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 22:13:57 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastic"}
+Completed: 500 message:  Time response: 27 ms Request ID: [ecef2a56-18b7-4c98-a347-32cf7036a487]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 22:15:13 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastic"}
+Completed: 500 message:  Time response: 17 ms Request ID: [671a450d-0eb2-4571-b1f6-f77882b4c289]
+
+Started DELETE /posts/2 for :: ::1 at Tue Jan 23 2024 22:19:56 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 8 ms Request ID: [b53952af-74c7-4b09-8039-65fe6338ed84]
+
+Started PUT /posts/like/2 for :: ::1 at Tue Jan 23 2024 22:19:59 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [95b682fe-9f9a-4c50-ab09-d9018e50a965]
+
+Started PUT /posts/like/1 for :: ::1 at Tue Jan 23 2024 22:21:23 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [8bb99918-261d-45c7-92b8-4bce9903d8cd]
+
+Started DELETE /posts/1 for :: ::1 at Tue Jan 23 2024 22:21:26 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [03a4d1cb-aed2-4839-b672-394a75688aaf]
+
+Started GET /posts for :: ::1 at Tue Jan 23 2024 23:22:50 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 145 ms Request ID: [57ef955e-dbf2-4c9f-9468-c5374e723d87]
+
+Started GET /posts for :: ::1 at Tue Jan 23 2024 23:22:50 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 28 ms Request ID: [7e0ec5eb-ffc2-462b-a7c1-812291e303a3]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 23:23:06 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastico"}
+Completed: 500 message:  Time response: 12 ms Request ID: [87c95802-5181-4f20-80c2-00381838ef50]
+
+Started PUT /posts/like/1 for :: ::1 at Tue Jan 23 2024 23:23:12 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [03b0a64c-a452-468c-af7d-c36f26ad6c12]
+
+Started DELETE /posts/1 for :: ::1 at Tue Jan 23 2024 23:23:14 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [8eaaba0e-e89e-405a-8238-a87a6029f0de]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 23:29:05 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastico"}
+Completed: 500 message:  Time response: 18 ms Request ID: [c486db38-c770-4c3a-a7a0-c858117edc24]
+
+Started POST /posts for :: ::1 at Tue Jan 23 2024 23:31:15 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://observer.com/wp-content/uploads/sites/2/2020/02/GettyImages-845710646.jpg?quality=80&strip","descripcion":"Fantastico"}
+Completed: 500 message:  Time response: 23 ms Request ID: [93d2346f-a33e-451b-99df-02a03896ad43]
