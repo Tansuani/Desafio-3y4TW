@@ -11,13 +11,14 @@ const getLikes = async () => {
     }
 };
 
-const createLike = async ({ titulo, url, descripcion }) => {
+const createLike = async (titulo, img, descripcion, likes=0) => {
     const SQLquery = {
-        text: "INSERT INTO posts VALUES (DEFAULT, $1, $2, $3) RETURNING *",
-        values: [titulo, url, descripcion],
+        text: "INSERT INTO posts (id, titulo, img, descripcion, likes) VALUES (DEFAULT, $1, $2, $3, $4)",
+        values: [titulo, img, descripcion, likes],
     };
     try {
         const {rows} = await pool.query(SQLquery);
+        console.log(rows)
         return rows;
     }
     catch (error) {
@@ -26,14 +27,13 @@ const createLike = async ({ titulo, url, descripcion }) => {
     }
 };
 
-const updateLike = async (id, { likes }) => {
+const updateLike = async (id, likes) => {
     const SQLquery = {
-        text: "UPDATE posts SET likes = $5 WHERE id = $2 RETURNING *",
-        values: [likes, id],
+        text: "UPDATE posts SET likes =(likes + 1) WHERE id = $1 RETURNING *",
+        values: [id],
     };
     try {
         const response = await pool.query(SQLquery);
-        return response.rows;
     }
     catch (error) {
         console.log(error);

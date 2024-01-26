@@ -14,10 +14,10 @@ const getAllLikes = async(req, res) => {
 
 const createLikes = async(req, res) => {
     try {
-        console.log(req.body)
-        const {post} = req.body;
-        const newLike = await createLike(post);
-        res.status(201).json({ post: newLike });
+        const {titulo, url: img, descripcion} = req.body;
+        console.log(titulo)
+        const newLike = await createLike(titulo, img, descripcion);
+        res.status(201).json(newLike);
     }
     catch (error) {
         res.status(500).json({ error: "Error al procesar la solicitud" });
@@ -28,9 +28,9 @@ const createLikes = async(req, res) => {
 const updateLikes = async(req, res) => {
     try {
         const {id} = req.params;
-        const {like} = req.body;
-        const likeUpdate = await updateLike (id, like);
-        res.status(200).json({ like: likeUpdate });
+        const {like} = req.query;
+        await updateLike(id, like);
+        res.status(200).send("nuevo like")
     }
     catch (error) {
         res.status(500).json({ error: "Error al procesar la solicitud" });
