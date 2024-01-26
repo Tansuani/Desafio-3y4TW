@@ -1,0 +1,55 @@
+
+Started POST /posts for :: ::1 at Fri Jan 26 2024 17:04:39 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"","url":"","descripcion":""}
+Completed: 201 message:  Time response: 18 ms Request ID: [397ccf0f-e234-4b89-a921-cc239b96d75f]
+
+Started GET /posts for :: ::1 at Fri Jan 26 2024 17:04:40 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 13 ms Request ID: [0159f42b-19e1-4df4-81ff-dae660695db4]
+
+Started POST /posts for :: ::1 at Fri Jan 26 2024 17:05:28 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim Carrey","url":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdoblaje.fandom.com%2Fes%2Fwiki%2FJim_Carrey&psig=AOvVaw2p3kM0cvPGx8G5py1YsXCN&ust=1706385904616000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDt5YDt-4MDFQAAAAAdAAAAABAD","descripcion":"Fantastico"}
+Completed: 201 message:  Time response: 16 ms Request ID: [fe4284ba-2e08-4a9c-90cd-69b9ca9c12e1]
+
+Started GET /posts for :: ::1 at Fri Jan 26 2024 17:05:28 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [e4756321-4496-462e-8ab9-45555dd8a9ee]
+
+Started DELETE /posts/GwgAGgX4ggOlELt9pwZQs for :: ::1 at Fri Jan 26 2024 17:05:36 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Started POST /posts for :: ::1 at Fri Jan 26 2024 17:07:09 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"","url":"","descripcion":""}
+Completed: 201 message:  Time response: 17 ms Request ID: [e2cb71ff-3955-455b-bb1d-462f1c8fc65d]
+
+Started GET /posts for :: ::1 at Fri Jan 26 2024 17:07:09 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 8 ms Request ID: [33510d78-39f2-4c50-87e2-ced7b28926ee]
+
+Started POST /posts for :: ::1 at Fri Jan 26 2024 17:07:47 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"Jim ","url":"https://www.latercera.com/resizer/DXFFjHYtqz_JayUs-SxCfg4Qw3I=/900x600/filters:focal(520x370:530x360)/cloudfront-us-east-1.images.arcpublishing.com/copesa/D3X2KJD47NAXTHW3KWGTCNSQVE.jpg","descripcion":"sdsdd"}
+Completed: 201 message:  Time response: 16 ms Request ID: [eea94019-2b0c-462d-959e-a1491eebb7d9]
+
+Started GET /posts for :: ::1 at Fri Jan 26 2024 17:07:47 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 9 ms Request ID: [13c4a340-4b81-4e40-a4e6-d5ce5871283f]
+
+Started DELETE /posts/M8IpdD4MbfWOD6RWqEc0v for :: ::1 at Fri Jan 26 2024 17:07:52 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Started GET /posts for :: ::1 at Fri Jan 26 2024 17:10:07 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 38 ms Request ID: [451fadaf-350a-4d95-91e3-4e40f68d553d]
+
+Started GET /posts for :: ::1 at Fri Jan 26 2024 17:10:07 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 30 ms Request ID: [b03971e3-e804-44e8-bbe3-a99c02b533e6]
+
+Started POST /posts for :: ::1 at Fri Jan 26 2024 17:10:19 GMT-0300 (Chile Summer Time)
+  Parameters in body: {"titulo":"tom","url":"https://media.diariolasamericas.com/p/be4c64de7dbca5e9c9dae99085504e24/adjuntos/216/imagenes/000/085/0000085155/855x0/smart/tom-hanks-visita-chile-ilusionado-conocer-la-antartida.jpg","descripcion":"wreret"}
+Completed: 201 message:  Time response: 14 ms Request ID: [fb93c7c7-c7a9-4c47-8636-ff679e9a0f41]
+
+Started GET /posts for :: ::1 at Fri Jan 26 2024 17:10:19 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 11 ms Request ID: [2f7f3d32-f547-4f87-b0ae-a0123d1e8a78]
+
+Started DELETE /posts/1 for :: ::1 at Fri Jan 26 2024 17:10:27 GMT-0300 (Chile Summer Time)
+  Parameters in body: {}

@@ -14,7 +14,7 @@ app.listen(PORT, console.log(`¡Servidor encendido en el puerto! ${PORT}`));
 app.use(express.json());
 app.use(cors());
 app.use(logger());
-app.use(likeRouter);
+app.use("/api/v1", likeRouter);
 
 app.use(bodyParser.json());
 
@@ -59,7 +59,7 @@ const getPosts = async () => {
     const post = posts.find((post) => post.id === id);
   
     if (!post) {
-      res.status(404).json({ message: "Todo not found" });
+      res.status(404).json({ message: "Post no encontrado" });
     }
   
     posts = posts.map((post) => {
@@ -81,7 +81,7 @@ const getPosts = async () => {
     const post = posts.find((post) => post.id === id);
   
     if (!post) {
-      res.status(404).json({ message: "Todo not found" });
+      res.status(404).json({ message: "Post no encontrado" });
     }
   
     posts = posts.filter((post) => post.id !== id);
@@ -90,6 +90,3 @@ const getPosts = async () => {
     res.json(posts);
   });
   
-  app.listen(5000, () => {
-    console.log("Example app listening on port 5000");
-  });
